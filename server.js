@@ -19,12 +19,16 @@ const heroku = new Heroku({ token: token });
 
 function resetDynos(){
     if (reset) {
+        console.log(1);
         // heroku.delete('/apps/' + appName + '/dynos/' + dynoName)
         heroku.delete('/apps/' + appName + '/dynos/')
             .then(() => console.log("dynos reseted"));
+        console.log(2);
     };
 
-    setTimeout(resetDynos, 720000);
+    reset = true;
+    console.log(3);
+    setTimeout(resetDynos, 120000);
 }
 
 resetDynos();
