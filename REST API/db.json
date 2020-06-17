@@ -1,0 +1,45 @@
+{
+    "invoices": [{
+    "id": 2034,
+    "date": "2/21/2018",
+    "billTo": {
+        "customerId": 564,
+        "terms": "Due upon receipt",
+        "name": "Elon",
+        "companyName": "The Boring Company, LLC",
+        "streetAddress": "Cameron Street",
+        "city": "Las Vegas",
+        "state": "NV",
+        "ZIP": "88901",
+        "phone": "0878455432",
+        "email": "boring_company@abv.bg"
+    },
+    "invoiceData": [
+        {
+            "description": "Service fee",
+            "quantity": 1,
+            "unitPrice": 200,
+            "amount": 200
+        },
+        {
+            "description": "Labor 5 hours at 75$/hr",
+            "quantity": 5,
+            "unitPrice": 75,
+            "amount": 375
+        },
+        {
+            "description": "New client discount",
+            "unitPrice": -50,
+            "amount": -50
+        }
+    ]
+    }],
+    "company": {
+        "name": "BlackRock",
+        "streetAddress": "Park Avenue Plaza. 55 East 52nd Street",        
+        "city": "New York",
+        "state": "NY",
+        "ZIP": "10001",
+        "phone": "0878455454"
+    }
+}
