@@ -4,15 +4,26 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
-// function killHeroku() {
-    // process.exit(0);
+const Heroku = require('heroku-client');
+const token = 'c475269b-6085-4db9-9601-22f79f8ed83a';
+const appName = 'protected-chamber-82435';
+const dynoName = 'yourDynoHere';
 
-    server.use(middlewares);
-    server.use(router);
+server.use(middlewares);
+server.use(router);
         
-    server.listen(port);
+server.listen(port);
 
-//     setTimeout(killHeroku, 720000);
-// }
+let reset = false;
+const heroku = new Heroku({ token: token });
 
-// killHeroku();
+function resetDynos(){
+    if (reset) {
+        heroku.delete('/apps/' + appName + '/dynos/' + dynoName)
+            .then( x => console.log("dynos reseted") );
+    };
+
+    setTimeout(resetDynos, 720000);
+}
+
+resetDynos();
