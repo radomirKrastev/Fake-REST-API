@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "heroku-client": "^3.1.0",
     "json-server": "^0.16.1"
   }
 }
