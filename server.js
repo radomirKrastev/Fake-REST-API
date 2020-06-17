@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const Heroku = require('heroku-client');
 const token = 'c475269b-6085-4db9-9601-22f79f8ed83a';
 const appName = 'protected-chamber-82435';
-const dynoName = 'yourDynoHere';
+// const dynoName = 'yourDynoHere';
 
 server.use(middlewares);
 server.use(router);
@@ -19,8 +19,9 @@ const heroku = new Heroku({ token: token });
 
 function resetDynos(){
     if (reset) {
-        heroku.delete('/apps/' + appName + '/dynos/' + dynoName)
-            .then( x => console.log("dynos reseted") );
+        // heroku.delete('/apps/' + appName + '/dynos/' + dynoName)
+        heroku.delete('/apps/' + appName + '/dynos/')
+            .then(() => console.log("dynos reseted"));
     };
 
     setTimeout(resetDynos, 720000);
