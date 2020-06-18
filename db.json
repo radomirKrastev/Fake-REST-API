@@ -150,29 +150,5 @@
                     "amount": 1
                 }
             ]
-        }],
-    "company": [{
-        "name": "BlackRock",
-        "streetAddress": "Park Avenue Plaza. 55 East 52nd Street",        
-        "city": "New York",
-        "state": "NY",
-        "ZIP": "10001",
-        "phone": "0878455454"
-    },
-    {
-        "name": "Hertz",
-        "streetAddress": "Bonita Springs Avenue Plaza",        
-        "city": "Bonita Springs",
-        "state": "Florida",
-        "ZIP": "10024",
-        "phone": "0878321454"
-    },
-    {
-        "name": "JP Morgan",
-        "streetAddress": "270 Park Avenue",        
-        "city": "New York",
-        "state": "NY",
-        "ZIP": "10001",
-        "phone": "0878458796"
-    }]
+        }]
 }
