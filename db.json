@@ -17,13 +17,13 @@
     "invoiceData": [
         {
             "description": "Service fee",
-            "quantity": 1,
+            "qty": 1,
             "unitPrice": 200,
             "amount": 200
         },
         {
             "description": "Labor 5 hours at 75$/hr",
-            "quantity": 5,
+            "qty": 5,
             "unitPrice": 75,
             "amount": 375
         },
@@ -33,13 +33,146 @@
             "amount": -50
         }
     ]
-    }],
-    "company": {
+    },
+    {
+        "id": 2211,
+        "date": "11/11/2016",
+        "billTo": {
+            "customerId": 578,
+            "terms": "Due upon receipt",
+            "name": "Jeff",
+            "companyName": "Amazon",
+            "streetAddress": "South Lake Street",
+            "city": "Seattle",
+            "state": "Washington",
+            "ZIP": "98001",
+            "phone": "0878455777",
+            "email": "amazon@abv.bg"
+        },
+        "invoiceData": [
+            {
+                "description": "Books sold",
+                "qty": 2,
+                "unitPrice": 15,
+                "amount": 200
+            },
+            {
+                "description": "Kindles sold",
+                "qty": 4,
+                "unitPrice": 74,
+                "amount": 412
+            }
+        ]
+        },
+        {
+            "id": 1789,
+            "date": "09/11/2017",
+            "billTo": {
+                "customerId": 666,
+                "terms": "Due upon receipt",
+                "name": "Warren",
+                "companyName": "BERKSHIRE HATHAWAY INC",
+                "streetAddress": "Omaha Street",
+                "city": "Omaha",
+                "state": "Nebraska",
+                "ZIP": "68410",
+                "phone": "0888455387",
+                "email": "berkshire@abv.bg"
+            },
+            "invoiceData": [
+                {
+                    "description": "Investment advice",
+                    "qty": 1,
+                    "unitPrice": 1500000,
+                    "amount": 2
+                },
+                {
+                    "description": "Comission",
+                    "unitPrice": 21387.53,
+                    "amount": 150
+                }
+            ]
+        },
+        {
+            "id": 891,
+            "date": "04/10/2010",
+            "billTo": {
+                "customerId": 561,
+                "terms": "Due upon receipt",
+                "name": "Daniel Ek",
+                "companyName": "Spotify",
+                "streetAddress": " Flatiron District",
+                "city": "New York",
+                "state": "NY",
+                "ZIP": "10001",
+                "phone": "0888455555",
+                "email": "spotify@abv.bg"
+            },
+            "invoiceData": [
+                {
+                    "description": "Joe Rogan's contract",
+                    "qty": 1,
+                    "unitPrice": 100000000,
+                    "amount": 1
+                },
+                {
+                    "description": "Advertisements",
+                    "unitPrice": 21387.53,
+                    "amount": 150
+                }
+            ]
+        },
+        {
+            "id": 2386,
+            "date": "07/12/2012",
+            "billTo": {
+                "customerId": 591,
+                "terms": "Due upon receipt",
+                "name": "Mortimer J. Buckley",
+                "companyName": "Vanguard",
+                "streetAddress": "Valley Forge Street",
+                "city": "Valley Forge",
+                "state": "Pennsylvania",
+                "ZIP": "19460",
+                "phone": "0888822333",
+                "email": "vanguard@abv.bg"
+            },
+            "invoiceData": [
+                {
+                    "description": "Investments fee",
+                    "qty": 1,
+                    "unitPrice": 1564.32,
+                    "amount": 4500
+                },
+                {
+                    "description": "M&A fee",
+                    "unitPrice": 20000000,
+                    "amount": 1
+                }
+            ]
+        }],
+    "company": [{
         "name": "BlackRock",
         "streetAddress": "Park Avenue Plaza. 55 East 52nd Street",        
         "city": "New York",
         "state": "NY",
         "ZIP": "10001",
         "phone": "0878455454"
-    }
+    },
+    {
+        "name": "Hertz",
+        "streetAddress": "Bonita Springs Avenue Plaza",        
+        "city": "Bonita Springs",
+        "state": "Florida",
+        "ZIP": "10024",
+        "phone": "0878321454"
+    },
+    {
+        "name": "JP Morgan",
+        "streetAddress": "270 Park Avenue",        
+        "city": "New York",
+        "state": "NY",
+        "ZIP": "10001",
+        "phone": "0878458796"
+    }]
 }
